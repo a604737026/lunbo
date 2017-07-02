@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding:0;
+}
+li {
+    list-style: none;
+}
+.box{
+    width: 500px;
+    height: 500px;
+    border: 1px solid #000;
+    margin: 100px auto;
+    position: relative;
+}
+.box-ul li{
+    position: absolute;
+    opacity: 0;
+}
+.box-ul li.show{
+    opacity: 1;
+}
+.arrow{
+    display: none;
+}
+li img{
+    width: 400px;
+    height: 500px;
+    margin-left: 10%;
+}
+.box span{
+    display: inline-block;
+    width: 30px;
+    height: 50px;
+    background-color:red;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    font-size: 40px;
+    line-height: 50px;
+    cursor: pointer;
+}
+.box .right{
+    right: 0;
+}
+
+.circle{
+    position: absolute;
+    bottom: 10px;
+    left: 40%;
+}
+.circle li{
+    list-style: none;
+    width: 18px;
+    height: 18px;
+    background-color: red;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+    color: #fff;
+    float: left;
+    margin-right: 2px;
+}
+.circle li.current{
+    background-color: skyblue;
+}
